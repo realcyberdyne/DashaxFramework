@@ -1,0 +1,27 @@
+import mimetypes
+import os
+
+class AssetMapping:
+    def MappingHandle(PathAndRequest):
+
+        current_dir = os.getcwd()
+        asset_file = current_dir + "/Assets" + PathAndRequest.upper().split("/ASSETS")[1]
+
+        content_type, _ = mimetypes.guess_type(asset_file)
+        content_type = content_type or 'application/octet-stream'
+
+        with open(asset_file, 'rb') as f:
+            image_data = f.read()
+
+        response_header = (
+            'HTTP/1.1 200 OK\r\n'
+            f'Content-Type: {content_type}\r\n'
+            f'Content-Length: {len(image_data)}\r\n'
+            'Connection: close\r\n'
+            '\r\n'
+        )
+        return response_header.encode() + image_data
+
+
+
+
