@@ -2,6 +2,7 @@ from Reponse.DResponse import DResponse
 from Route import FileManagerMapping
 from Route.AssetMapping import AssetMapping
 from Route.GetMapping import GetMapping
+from Route.PostMapping import PostMapping
 from Route.RepositoryMapping import RepositoryMapping
 
 
@@ -21,6 +22,8 @@ class HttpHandler:
                 FinalResponse = FileManagerMapping.MappingHandle(RequestData[1],request)
             else:
                 FinalResponse = GetMapping.MappingHandle(RequestData[1],request)
+        elif str(RequestData[0]).upper()=="POST":
+            FinalResponse = PostMapping.MappingHandle(RequestData[1], request)
 
 
         #Get Check response type

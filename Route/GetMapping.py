@@ -28,16 +28,14 @@ class GetMapping:
         MainPath =  Parameters[0]
 
         #Get Parameters
-        MainParametrs = {}
+        params = {}
         if(len(Parameters) > 1):
-            MainParametrs = GetMapping.parse_query_string(Parameters[1])
-
-
+            params = GetMapping.parse_query_string(Parameters[1])
 
 
         if MainPath == "/":
             controller = HomeController()
-            return controller.index(request)
+            return controller.index(params,request)
         else:
             return ""
 
