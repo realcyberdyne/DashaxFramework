@@ -10,18 +10,17 @@ class HttpHandler:
     def Requesthandle(self, request,response):
 
         RequestData = self.GetRequestAddressTypeAnd(request)
-        FinalResponse = DResponse("");
+        FinalResponse = DResponse("")
 
         if str(RequestData[0]).upper()=="GET":
             if "ASSETS" in RequestData[1].upper():
-                FinalResponse = AssetMapping.MappingHandle(RequestData[1])
+                FinalResponse = AssetMapping.MappingHandle(RequestData[1],request)
             elif "Files" in RequestData[1].upper():
-                FinalResponse = RepositoryMapping.MappingHandle(RequestData[1])
+                FinalResponse = RepositoryMapping.MappingHandle(RequestData[1],request)
             elif "FileManager" in RequestData[1].upper():
-                FinalResponse = FileManagerMapping.MappingHandle(RequestData[1])
+                FinalResponse = FileManagerMapping.MappingHandle(RequestData[1],request)
             else:
-                FinalResponse = GetMapping.MappingHandle(RequestData[1])
-
+                FinalResponse = GetMapping.MappingHandle(RequestData[1],request)
 
 
         #Get Check response type

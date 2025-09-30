@@ -1,6 +1,6 @@
 {
   "app":{
-    "PORT": 9096,
+    "PORT": 9009,
     "HOST": "localhost"
   }
 }
