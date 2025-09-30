@@ -1,8 +1,9 @@
-from Reponse.Response import Response
+from Reponse.DResponse import DResponse
+from Reponse.DView import DView
 
 
 class HomeController:
 
     #Get index request
     def index():
-        return Response("Hello");
+        return DResponse(DView("index"));

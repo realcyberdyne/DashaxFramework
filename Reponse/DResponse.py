@@ -1,4 +1,4 @@
-class Response:
+class DResponse:
 
     def __init__(self, content, content_type: str = "text/html", status_code: int = 200):
         self.content_type = content_type

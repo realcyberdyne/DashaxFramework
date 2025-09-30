@@ -11,16 +11,16 @@ class AssetMapping:
         content_type = content_type or 'application/octet-stream'
 
         with open(asset_file, 'rb') as f:
-            image_data = f.read()
+            file_data = f.read()
 
         response_header = (
             'HTTP/1.1 200 OK\r\n'
             f'Content-Type: {content_type}\r\n'
-            f'Content-Length: {len(image_data)}\r\n'
+            f'Content-Length: {len(file_data)}\r\n'
             'Connection: close\r\n'
             '\r\n'
         )
-        return response_header.encode() + image_data
+        return response_header.encode() + file_data
 
 
 

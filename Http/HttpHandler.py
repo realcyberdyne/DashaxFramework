@@ -1,6 +1,8 @@
-from Reponse.Response import Response
+from Reponse.DResponse import DResponse
+from Route import FileManagerMapping
 from Route.AssetMapping import AssetMapping
 from Route.GetMapping import GetMapping
+from Route.RepositoryMapping import RepositoryMapping
 
 
 class HttpHandler:
@@ -8,15 +10,22 @@ class HttpHandler:
     def Requesthandle(self, request,response):
 
         RequestData = self.GetRequestAddressTypeAnd(request)
-        FinalResponse = Response("");
+        FinalResponse = DResponse("");
 
         if str(RequestData[0]).upper()=="GET":
             if "ASSETS" in RequestData[1].upper():
                 FinalResponse = AssetMapping.MappingHandle(RequestData[1])
+            elif "Files" in RequestData[1].upper():
+                FinalResponse = RepositoryMapping.MappingHandle(RequestData[1])
+            elif "FileManager" in RequestData[1].upper():
+                FinalResponse = FileManagerMapping.MappingHandle(RequestData[1])
             else:
                 FinalResponse = GetMapping.MappingHandle(RequestData[1])
 
-        if isinstance(FinalResponse, Response):
+
+
+        #Get Check response type
+        if isinstance(FinalResponse, DResponse):
             try:
                 if FinalResponse.content_type is not None:
                     if FinalResponse.content_type == "text/html":
