@@ -1,4 +1,5 @@
 import os
+import re
 from Reponse.DResponse import DResponse
 
 def DView(ViewAddress,attributes=[]):
@@ -10,9 +11,27 @@ def DView(ViewAddress,attributes=[]):
 
         if(len(attributes) > 0):
             for attribute in attributes:
-                print(content)
-                print(attribute["name"])
+                # print(content)
+                # print(attribute["name"])
                 content = content.replace("@"+attribute["name"],attribute["value"])
+
+                # Process @include directives recursively
+                while "@include('" in content or '@include("' in content:
+                    # Pattern to match @include('path') or @include("path")
+                    pattern = r"@include\(['\"]([^'\"]+)['\"]\)"
+                    match = re.search(pattern, content)
+
+                    if match:
+                        include_path = match.group(1)
+                        include_placeholder = match.group(0)
+
+                        # Recursively call DView to get the included content
+                        included_content = DView(include_path, attributes)
+
+                        # Replace the @include directive with the included content
+                        content = content.replace(include_placeholder, included_content, 1)
+                    else:
+                        break  # No more valid @include directives found
 
         return content
     except FileNotFoundError:

@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc3c3303-a586-474e-9fc9-5ffd4181507a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/View/sayhello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Http/HttpServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http/HttpServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reponse/DView.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reponse/DView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Route/GetMapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Route/GetMapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/sayhello.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/sayhello.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.HttpServer.executor": "Run",
-    "Python.app.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/rezafta/Desktop/DashaxFramework/View"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.HttpServer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rezafta/Desktop/DashaxFramework/View&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rezafta\Desktop\DashaxFramework\View" />
