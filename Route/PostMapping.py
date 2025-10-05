@@ -34,12 +34,24 @@ class PostMapping:
         if(len(Parameters) > 1):
             params = PostMapping.parse_query_string(Parameters[1])
 
+        input_params = request.split("\r\n\r\n")
+        if(len(input_params) <= 0):
+            input_params = request.split("\n\n")
+
+        params = PostMapping.parse_query_string(input_params[1])
+
+
+        print(input_params)
+
+
 
         if MainPath == "/":
             return HomeController().index(params, request)
 
             #Smaple middleware use
             # return HomeController().index(params, request) if MainMiddleware(request) else "OK"
+        elif MainPath == "/sampleform":
+            return HomeController().sayhello(request,params)
         else:
             return ""
 

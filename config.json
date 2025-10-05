@@ -1,6 +1,10 @@
 {
   "app":{
     "PORT": 9009,
-    "HOST": "localhost"
+    "HOST": "localhost",
+    "BUFFERSIZE": 99999,
+    "RequestTimeOut": 0.5,
+    "MAX_FILE_SIZE": 10,
+    "UPLOAD_DIR": "C:\\Users\\rezafta\\Desktop\\DashaxFramework\\FileTmp"
   }
 }

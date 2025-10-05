@@ -9,5 +9,8 @@ class HomeController:
     def index(self, params,request):
         return DResponse(DView("index"))
 
-    def sayhello(self, params,request):
-        return DResponse(DView("sayhello",[{"name":"name","value":"Rezafta"}]))
+    def sampleform(self, params,request):
+        return DResponse(DView("sample_form"))
+
+    def sayhello(self,request,params):
+        return DResponse("Hello %s!" % params["name"])

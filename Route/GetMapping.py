@@ -95,9 +95,9 @@ class GetMapping:
                 'method': 'index'
             },
             {
-                'pattern': '/sayhello',
+                'pattern': '/sampleform',
                 'controller': HomeController,
-                'method': 'sayhello'
+                'method': 'sampleform'
             }
         ]
 

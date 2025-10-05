@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc3c3303-a586-474e-9fc9-5ffd4181507a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Http/Middleware/MainMiddleWare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/sample_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/ConfigLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/ConfigLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/Handlers/HttpServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http/Handlers/HttpServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Route/GetMapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Route/GetMapping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Route/PostMapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Route/PostMapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reponse/DRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/sayhello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -33,18 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.HttpServer.executor": "Run",
-    "Python.app.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/rezafta/Desktop/DashaxFramework/Assets"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.HttpServer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rezafta/Desktop/DashaxFramework/Assets&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rezafta\Desktop\DashaxFramework\Assets" />
