@@ -63,13 +63,6 @@ class GetMapping:
 
     @staticmethod
     def parse_path_pattern(pattern, path):
-        """
-        Match path pattern with actual path and extract parameters
-        Example: pattern='/{name}/{family}' and path='/ali/mohammadi'
-        Output: {'name': 'ali', 'family': 'mohammadi'}
-        """
-        # Convert pattern to regex
-        # {name} -> (?P<name>[^/]+)
         pattern_regex = re.sub(r'\{(\w+)\}', r'(?P<\1>[^/]+)', pattern)
         pattern_regex = '^' + pattern_regex + '$'
 

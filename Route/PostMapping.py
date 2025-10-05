@@ -1,4 +1,6 @@
 from Controllers.HomeController import HomeController
+from Http.Middleware.MainMiddleWare import MainMiddleware
+
 
 class PostMapping:
 
@@ -34,8 +36,10 @@ class PostMapping:
 
 
         if MainPath == "/":
-            controller = HomeController()
-            return controller.index(params,request)
+            return HomeController().index(params, request)
+
+            #Smaple middleware use
+            # return HomeController().index(params, request) if MainMiddleware(request) else "OK"
         else:
             return ""
 
