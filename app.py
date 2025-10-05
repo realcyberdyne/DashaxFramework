@@ -1,5 +1,5 @@
 from Config.ConfigLoader import ConfigLoader
-from Http.HttpServer import HTTPServer
+from Http.Handlers.HttpServer import HTTPServer
 
 def main():
     # Store the ConfigLoader instance

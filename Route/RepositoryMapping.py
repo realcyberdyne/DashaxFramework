@@ -2,7 +2,7 @@ import mimetypes
 import os
 
 class RepositoryMapping:
-    def MappingHandle(PathAndRequest):
+    def MappingHandle(PathAndRequest,request):
 
         current_dir = os.getcwd()
         asset_file = current_dir + "/Files" + PathAndRequest.upper().split("/Files")[1]

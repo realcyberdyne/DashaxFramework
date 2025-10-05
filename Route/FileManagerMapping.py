@@ -2,7 +2,7 @@ import mimetypes
 import os
 
 class FileManagerMapping:
-    def MappingHandle(PathAndRequest):
+    def MappingHandle(PathAndRequest,request):
 
         current_dir = os.getcwd()
         asset_file = current_dir + "/FileManager" + PathAndRequest.upper().split("/FileManager")[1]

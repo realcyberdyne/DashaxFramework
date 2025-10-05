@@ -2,8 +2,7 @@ import mimetypes
 import os
 
 class AssetMapping:
-    def MappingHandle(PathAndRequest):
-
+    def MappingHandle(PathAndRequest,request):
         current_dir = os.getcwd()
         asset_file = current_dir + "/Assets" + PathAndRequest.upper().split("/ASSETS")[1]
 

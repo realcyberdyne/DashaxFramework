@@ -31,9 +31,8 @@
 
 
 import socket
-import threading
 from concurrent.futures import ThreadPoolExecutor
-from Http.HttpHandler import HttpHandler
+from Http.Handlers.HttpHandler import HttpHandler
 
 
 class HTTPServer:

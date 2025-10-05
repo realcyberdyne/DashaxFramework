@@ -1,9 +1,9 @@
 from Reponse.DResponse import DResponse
-from Route import FileManagerMapping
 from Route.AssetMapping import AssetMapping
 from Route.GetMapping import GetMapping
 from Route.PostMapping import PostMapping
 from Route.RepositoryMapping import RepositoryMapping
+from Route.FileManagerMapping import FileManagerMapping
 
 
 class HttpHandler:
