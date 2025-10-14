@@ -1,4 +1,4 @@
-# DashaxFramework
+# CobraFramework
 
 A lightweight, high-performance Python web framework built from scratch with modern features and clean architecture.
 
@@ -23,13 +23,13 @@ A lightweight, high-performance Python web framework built from scratch with mod
 Clone the repository:
 
 ```bash
-git clone https://github.com/realcyberdyne/DashaxFramework.git
+git clone https://github.com/realcyberdyne/CobraFramework.git
 ```
 
 Navigate to the project directory:
 
 ```bash
-cd DashaxFramework
+cd CobraFramework
 ```
 
 ## 🚀 Quick Start
@@ -45,7 +45,7 @@ The server will start on `localhost:9009` by default.
 ## 📁 Project Structure
 
 ```
-DashaxFramework/
+CobraFramework/
 ├── app.py                 # Main application entry point
 ├── config.json           # Configuration file
 ├── Assets/               # Static assets (CSS, images)
@@ -74,7 +74,7 @@ Edit `config.json` to customize your application:
     "BUFFERSIZE": 99999,
     "RequestTimeOut": 0.5,
     "MAX_FILE_SIZE": 10,
-    "UPLOAD_DIR": "C:\\Users\\rezafta\\Desktop\\DashaxFramework\\FileTmp"
+    "UPLOAD_DIR": "C:\\Users\\rezafta\\Desktop\\CobraFramework\\FileTmp"
   }
 }
 ```
